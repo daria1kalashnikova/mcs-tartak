@@ -4,7 +4,6 @@
   max-width: 375px;
   margin: 0 auto;
   padding: 0 16px;
-  background-color: var(--green);
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -21,4 +20,9 @@
 
 .section {
   padding: 40px 0;
+  background-color: var(--green);
+}
+
+.section-title {
+  color: var(--black);
 }
