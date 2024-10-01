@@ -4,10 +4,17 @@
   | default @import url()
   |============================
 */
-/* Common styles */
-@import url('./reset.css');
+
+/* Variables */
+@import url('./variables.css');
+
+/* Base */
+
 @import url('./base.css');
-@import url('./container.css');
+@import url('./reset.css');
+
+/* Common styles */
+@import url('./common.css');
 
 /* Sections style */
 @import url('./header.css');
