@@ -1,14 +1,25 @@
 :root {
+  /* font-family */
+  --font-primary: "Manrope", sans-serif;
+
   /* Colors */
 
-  --black: rgb(18, 20, 23);
-  --green: rgb(77, 194, 116);
-  --green-gradient: ;
-  --green-light: rgb(212, 253, 225);
-  --gray: rgb(243, 245, 246);
-  --white: rgb(255, 255, 255);
+  --color-main: 77 194 116; /* Green */
+  --color-main-light: 212 253 225; /* Green Light */
+  --color-main-dark: 190 232 204; /* Green on Header, Underline */
+  --color-gray: 243 245 246; /* Gray */
+  --color-black: 18 20 23; /* Black */
+  --color-white: 255 255 255; /* White */
 
-  /* font-family */
+  /* Gradients */
+  --gradient-green: linear-gradient(85deg, rgb(77, 194, 116) 2.25%, rgb(190, 232, 204) 131.25%);
 
-  /* test */
+  /* Border radius */
+  --radius-card: 30px;
+  --radius-controls: 12px; /* For buttons, inputs */
+  --radius-socials: 10px; 
+  --radius-circle: 50%; /* For circle avatars, buttons */
+
+  /* Animations */
+  --transition-basic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

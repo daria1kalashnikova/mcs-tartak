@@ -3,26 +3,160 @@
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
+
+.section {
+  padding: 80px 0;
+}
+
+/* #region Font System  */
+
+.font-h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.26;
+}
+.font-h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+}
+.font-h3 {
+
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+.font-h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+.font-h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+}
+
+.font-body {
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.font-caption {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+}
+
+.font-subtitle {
+    text-align: center;
+    line-height: 1.71;
+}
+
+.font-nav-link {
+    font-weight: 600;
+    line-height: 1.28;
+}
+
+.font-footer {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+
+/* #endregion Font System */
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
   }
+    .section {
+      padding: 100px 0;
+    }
+  
+    /* #region Font System  */
+        .font-h1 {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1.16;
+        }
+        .font-h2 {
+            text-align: center;
+
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        .font-h3 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: -0.02em;
+        }
+        .font-h4 {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        .font-h5 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        .font-body {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        .font-subtitle {
+            text-align: center;
+          
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.66;
+        }
+    /* #endregion Font System */
 }
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .container {
-    max-width: 1200px;
+    max-width: 1152px;
+    padding: 0 64px;
   }
+
+  .container.wide-container {
+    padding: 0;
+  }
+
+    .section {
+      padding: 150px 0;
+    }
 }
 
-.section {
-  padding: 40px 0;
-  background-color: var(--green);
-}
-
-.section-title {
-  color: var(--black);
+/* Styles for all devices */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
 }
