@@ -17,12 +17,12 @@
 @import url('./common/common.css');
 
 /* Sections style */
-@import url('./section/header.css');
-@import url('./section/hero.css');
-@import url('./section/about.css');
-@import url('./section/lessons.css');
-@import url('./section/application.css');
-@import url('./section/teachers.css');
-@import url('./section/form.css');
-@import url('./section/reviews.css');
-@import url('./section/footer.css');
+@import url('./sections/header.css');
+@import url('./sections/hero.css');
+@import url('./sections/about.css');
+@import url('./sections/lessons.css');
+@import url('./sections/application.css');
+@import url('./sections/teachers.css');
+@import url('./sections/form.css');
+@import url('./sections/reviews.css');
+@import url('./sections/footer.css');
