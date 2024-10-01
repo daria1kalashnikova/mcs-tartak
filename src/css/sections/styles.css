@@ -1,0 +1,28 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+/* Variables */
+@import url('./variables/variables.css');
+
+/* Base */
+
+@import url('./base/base.css');
+@import url('./base/reset.css');
+
+/* Common styles */
+@import url('./common/common.css');
+
+/* Sections style */
+@import url('./section/header.css');
+@import url('./section/hero.css');
+@import url('./section/about.css');
+@import url('./section/lessons.css');
+@import url('./section/application.css');
+@import url('./section/teachers.css');
+@import url('./section/form.css');
+@import url('./section/reviews.css');
+@import url('./section/footer.css');
