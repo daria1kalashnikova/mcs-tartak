@@ -65,6 +65,41 @@
 
 /* #endregion Font System */
 
+/* #region buttons styles */
+.btn-primary{
+  font-family: var( --font-primary);
+  font-size: 14px;
+  font-weight: 700;
+  background-color: var( --color-main);
+  color: var(--color-white);
+  border-radius: 12px;
+  padding: 14px 87px;
+  width: 295px;
+  height: 52px;
+  line-height: 171%;
+}
+
+.btn-primary:hover{
+  background-color: #38AE5F;
+}
+
+.btn-secondary{
+  border: 1px solid var(--color-white);
+  border-radius: 12px;
+  padding: 14px 87px;
+  background-color: transparent;
+  width: 295px;
+  height: 52px;
+  line-height: 171%;
+  color: var(--color-white);
+}
+
+.btn-secondary:hover{
+  color: var(--color-main);
+  background: var(--color-white);
+}
+/* #endregion button styles */
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
@@ -116,6 +151,24 @@
             line-height: 1.66;
         }
     /* #endregion Font System */
+
+    /* #region buttons styles */
+    .btn-primary{
+      padding: 16px 64px;
+      width: 306px;
+      height: 60px;
+      font-size: 18px;
+      line-height: 156%;
+    }
+
+    .btn-secondary{
+      padding: 16px 64px;
+      width: 306px;
+      height: 60px;
+      font-size: 18px;
+      line-height: 156%;
+    }
+    /* #endregion buttons style */
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
@@ -131,6 +184,24 @@
     .section {
       padding: 150px 0;
     }
+
+      /* #region buttons styles */
+      .btn-primary{
+        padding: 16px 64px;
+        width: 306px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 156%;
+      }
+  
+      .btn-secondary{
+        padding: 16px 64px;
+        width: 306px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 156%;
+      }
+      /* #endregion buttons style */
 }
 
 /* Styles for all devices */
