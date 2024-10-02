@@ -35,6 +35,8 @@
           type="text"
           id="person-name"
           placeholder="Name"
+          minlength="3"
+          required
         />
 
         <label for="person-email"></label>
@@ -51,6 +53,8 @@
           type="text"
           id="person-phone"
           placeholder="Phone"
+          pattern="^\+380\d{9}$"
+          required
         />
         <textarea
           class="form-textarea"
@@ -62,17 +66,44 @@
         <!-- Radiobuttons -->
         <p class="form-subtitle font-h5">Choose a teacher</p>
         <label class="form-radio-label">
-        <input class="form-radio" type="radio" name="teacher" id="maria" checked></input><span class="checkmark"></span>
+        <input 
+        class="form-radio" 
+        type="radio" 
+        name="teacher" 
+        value="teacher1"
+        id="maria" 
+        checked></input>
+        <span class="checkmark"></span>
           Maria </label>
         <label class="form-radio-label">
-        <input class="form-radio" type="radio" name="teacher" id="artem"></input><span class="checkmark"></span>
+        <input 
+        class="form-radio" 
+        type="radio" 
+        name="teacher" 
+        value="teacher2" 
+        id="artem">
+      </input>
+      <span class="checkmark"></span>
           Artem </label>
         <label class="form-radio-label">
-        <input class="form-radio" type="radio" name="teacher" id="ilona"></input><span class="checkmark"></span>
+        <input 
+        class="form-radio" 
+        type="radio" 
+        name="teacher" 
+        value="teacher3" 
+        id="ilona">
+      </input>
+      <span class="checkmark"></span>
           Ilona </label>
       
         <label class="form-radio-label">
-        <input class="form-radio" type="radio" name="teacher" id="volodymyr"></input><span class="checkmark"></span>
+        <input 
+        class="form-radio" 
+        type="radio" 
+        name="teacher" 
+        value="teacher4" 
+        id="volodymyr"></input>
+        <span class="checkmark"></span>
           Volodymyr </label>
 
         <!-- Form bottom -->

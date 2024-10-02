@@ -114,6 +114,11 @@
 
 /* Form (right part) */
 
+form .btn-primary {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
 .form-wrapper {
   display: flex;
   flex-direction: column;
@@ -183,9 +188,16 @@
 
 .form-button /* TO UDPATE */ {} 
 
-.form-caption {}
+.form-caption {
+    color: rgb(var(--color-black) / 0.5);
+    font-size: 12px;  
+    line-height: 1.33;
+}
 
-.form-caption-link {}
+.form-caption-link {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+}
 
 /* #region CSS Radiobutton */
   /* Customize the label (the container) */
