@@ -1,27 +1,31 @@
 .lessons-title {
+    display: block;
     text-align: center;
-    margin-bottom: 16px;
-    /* position: relative;
-    display: inline-block; */
+    margin: 0 auto 16px;
 
     color: rgb(var(--color-black));
 }
-.section-title .underline {
+.lessons-title .underline {
     position: relative;
     z-index: 1;
-    display: inline-block;
 }
-.section-title .underline::before {
+.lessons-title .underline::before {
     content: '';
     position: absolute;
     left: 0;
-    right: 0;
-    bottom: 0.1em;
-    /* width: 100%; */
-    height: 0.3em;
-    background-color: rgb(var(--color-main));
+    bottom: 2px;
+    width: 100%;
+    height: 12px;
+    
+    background-color: rgb(var(--color-main-dark));
+    border-radius: 8px;
     z-index: -1;
-    border-radius: 3px
+}
+@media only screen and (min-width: 768px) {
+  .lessons-title .underline::before {
+    bottom: 0px;
+    height: 20px;
+  }
 }
 
 .lessons-subtitle {
@@ -134,7 +138,46 @@
     border: none;
     border-radius: var(--radius-controls);
     background-color: rgb(var(--color-main));
+
+    transition: var(--transition-basic);
+    transition-property: background-color, color, border;
 }
+@media only screen and (max-width: 767.98px) {
+  .lessons-item-button:active {
+      background-color: rgb(56, 174, 95);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .lessons-item-button {
+    height: 60px;
+
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .lessons-item-button:hover,
+  .lessons-item-button:focus {
+    background-color: rgb(56, 174, 95);
+  }
+}
+
 .lessons-item.accent .lessons-item-button {
     border: 1px solid rgb(var(--color-white) / 40%);
+}
+@media only screen and (max-width: 767.98px) {
+  .lessons-item.accent .lessons-item-button:active {
+      color: rgb(var(--color-main));
+
+      border: 1px solid transparent;
+      background-color: rgb(var(--color-white));
+  }
+}
+@media only screen and (min-width: 768px) {
+  .lessons-item.accent .lessons-item-button:hover,
+  .lessons-item.accent .lessons-item-button:focus {
+      color: rgb(var(--color-main));
+
+      border: 1px solid transparent;
+      background-color: rgb(var(--color-white));
+  }
 }
