@@ -70,7 +70,7 @@ dialog::backdrop {
 }
 
 /* Media query for screen width 768px and above */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   dialog {
     width: 384px;
     height: 100%; /* Full height */
