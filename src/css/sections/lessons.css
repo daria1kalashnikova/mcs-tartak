@@ -62,7 +62,7 @@
     max-width: 335px;
 
     border: 1px solid rgb(var(--color-main));
-    border-radius: 16px;
+    border-radius: var(--radius-card);
 
     color: rgb(var(--color-black) / 50%);
     background-color: rgb(var(--color-white));
@@ -150,6 +150,7 @@
 @media only screen and (min-width: 768px) {
   .lessons-item-button {
     height: 60px;
+    padding: 16px 0;
 
     font-size: 18px;
     line-height: 1.56;
