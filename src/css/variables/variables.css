@@ -15,10 +15,16 @@
   --gradient-green: linear-gradient(85deg, rgb(77, 194, 116) 2.25%, rgb(190, 232, 204) 131.25%);
 
   /* Border radius */
-  --radius-card: 30px;
+  --radius-card: 16px;
   --radius-controls: 12px; /* For buttons, inputs */
   --radius-circle: 50%; /* For circle avatars, buttons */
 
   /* Animations */
   --transition-basic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --radius-card: 30px;
+  }
 }
