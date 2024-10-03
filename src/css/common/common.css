@@ -176,24 +176,6 @@
   .section {
     padding: 75px 0;
   }
-
-  /* #region buttons styles */
-  .btn-primary {
-    padding: 16px 64px;
-    width: 306px;
-    height: 60px;
-    font-size: 18px;
-    line-height: 156%;
-  }
-
-  .btn-secondary {
-    padding: 16px 64px;
-    width: 306px;
-    height: 60px;
-    font-size: 18px;
-    line-height: 156%;
-  }
-  /* #endregion buttons style */
 }
 
 /* Styles for all devices */
