@@ -1,3 +1,7 @@
+.some-dumb-code {
+  background: #000;
+}
+
 .application-section {
   margin: 0 auto;
   border-radius: var(--radius-card);
