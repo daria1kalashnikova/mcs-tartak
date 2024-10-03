@@ -81,13 +81,12 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  stroke: var(--color-main);
 }
 
 .mobile-menu-icon {
   width: 40px;
   height: auto;
-  stroke: rgb(var(--color-main));
+  stroke: currentColor;
 }
 
 @media only screen and (max-width: 375px) {

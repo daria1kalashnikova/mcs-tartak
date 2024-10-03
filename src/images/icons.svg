@@ -5,7 +5,7 @@
       <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M13.714 10.667H7.619v10.667h5.714M7.619 16h5.714m4.191-3.809v4.19a3.428 3.428 0 1 1 6.856 0v4.952" style="stroke:var(--color2, #000)"/>
     </symbol>
     <symbol id="icon-checkmark" viewBox="0 0 32 32">
-      <path fill="#4dc274" d="M16.947 17.867a1.334 1.334 0 0 1-1.894 0l-6.107-6.12a1.334 1.334 0 1 0-1.894 1.88l6.12 6.12a4.001 4.001 0 0 0 5.654 0l6.12-6.12a1.337 1.337 0 0 0-.434-2.172 1.331 1.331 0 0 0-1.46.292l-6.107 6.12z" style="fill:var(--color3, #4dc274)"/>
+      <path fill="none" d="M16.947 17.867a1.334 1.334 0 0 1-1.894 0l-6.107-6.12a1.334 1.334 0 1 0-1.894 1.88l6.12 6.12a4.001 4.001 0 0 0 5.654 0l6.12-6.12a1.337 1.337 0 0 0-.434-2.172 1.331 1.331 0 0 0-1.46.292l-6.107 6.12z" style="fill:var(--color3, #4dc274)"/>
     </symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M24 8 8 24M8 8l16 16" style="stroke:var(--color1, #fff)"/>
