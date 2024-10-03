@@ -1,0 +1,82 @@
+/* Styling for the dialog (base for mobile first) */
+dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px; /* Width for 375px screen */
+  height: 100%; /* Full height */
+  background: rgba(18, 20, 23, 0.95);
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Right margin for 375px */
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Adjusting the backdrop for dialog */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Menu List */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 80px 0; /* Adjust margins as needed */
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0; /* Adjust margins as needed */
+}
+
+.social-links a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+/* Media query for screen width 768px and above */
+@media only screen and (min-width: 768px) {
+  dialog {
+    width: 384px;
+    height: 100%; /* Full height */
+  }
+
+  .menu {
+    margin: 150px 0; /* Adjust margins for larger screens */
+  }
+}

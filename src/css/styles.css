@@ -18,6 +18,7 @@
 
 /* Sections style */
 @import url('./sections/header.css');
+@import url('./sections/mobilemenu.css');
 @import url('./sections/hero.css');
 @import url('./sections/about.css');
 @import url('./sections/lessons.css');
