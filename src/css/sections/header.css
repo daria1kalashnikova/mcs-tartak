@@ -10,10 +10,16 @@
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: 16px;
+  justify-content: flex-end;
   flex-grow: 1;
 }
+
+@media only screen and (min-width: 1280px) {
+  .header-nav {
+  justify-content: center;
+  }
+}
+
 .header-logo {
   display: inline-flex;
   max-width: 115px;
@@ -94,6 +100,7 @@
     width: 40px;
     height: auto;
   }
+
 }
 
 @media only screen and (min-width: 1280px) {
