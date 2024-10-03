@@ -76,11 +76,16 @@
 }
 
 .mobile-menu-btn {
-  background: transparent;
-  border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
+  stroke: currentColor;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .mobile-menu-icon {
