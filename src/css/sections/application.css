@@ -1,33 +1,68 @@
 .application-section {
   margin: 0 auto;
-
-  border-radius: 16px;
-  padding: 40px 20px 64px 20px;
+  border-radius: var(--radius-card);
+  padding: 40px 20px;
   background-image: var(--gradient-green);
+}
+
+@media only screen and (min-width: 768px) {
+  .application-section {
+    padding: 64px 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .application-section {
+    padding: 64px 64px;
+  }
 }
 
 .application-section-title {
   text-align: left;
   color: rgb(var(--color-white));
-  margin-bottom: 65px;
+  margin-bottom: 64px;
 }
 
 @media only screen and (min-width: 768px) {
+  .application-section-title {
+    margin-bottom: 84px;
+  }
 }
 
-.application-accent {
-  background-color: rgba(var(--color-main));
+@media only screen and (min-width: 1280px) {
+  .application-section-title {
+    margin-bottom: 134px;
+  }
+}
+
+.application-section-accent {
+  color: rgb(var(--color-main-light));
 }
 
 .application-wrapper {
-  border-radius: 16px;
+  border-radius: var(--radius-card);
   background-color: rgb(var(--color-white));
-  margin: 0 20px 65px 20px;
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.section-subtitle {
-  font-weight: 700;
-  font-size: 40px;
+
+@media only screen and (min-width: 768px) {
+  .application-wrapper {
+    padding: 64px 64px;
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .application-wrapper {
+    padding: 64px 32px;
+    gap: 40px;
+  }
+}
+
+.application-title {
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: rgb(var(--color-black));
@@ -35,14 +70,52 @@
 
 .application-list {
   color: rgb(var(--color-black));
+  margin-bottom: 20px;
 }
+
 .application-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: -0.02em;
   color: rgb(var(--color-black));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+.application-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .application-item {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.application-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-circle);
+  color: rgb(var(--color-white));
+  background-color: rgb(var(--color-main));
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .application-item-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
+  }
+}
+
 .application-link {
   font-weight: 700;
   font-size: 14px;
