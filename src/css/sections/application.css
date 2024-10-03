@@ -1,60 +1,95 @@
 .application-section {
-  margin: 0 auto;
-
-  border-radius: 16px;
-  padding: 40px 20px 64px 20px;
-  background-image: var(--gradient-green);
+  padding: 80px 20px;
 }
 
-.application-section-title {
+.application-container {
+  min-width: 180px;
+  max-width: 335px;
+  padding: 40px 20px;
+
+  border-radius: var(--radius-card);
+  background-image: var(--gradient-green);
+}
+@media only screen and (min-width: 1280px) {
+  .application-container {
+    max-width: 1280px;
+  }
+}
+
+.application-title {
   text-align: left;
   color: rgb(var(--color-white));
   margin-bottom: 65px;
 }
 
-@media only screen and (min-width: 768px) {
-}
-
-.application-accent {
-  background-color: rgba(var(--color-main));
+.application-title-accent {
+  color: rgba(var(--color-main-dark));
 }
 
 .application-wrapper {
   border-radius: 16px;
   background-color: rgb(var(--color-white));
-  margin: 0 20px 65px 20px;
   padding: 40px 20px;
 }
 .section-subtitle {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  padding-bottom: 20px;
+
   color: rgb(var(--color-black));
 }
 
 .application-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
   color: rgb(var(--color-black));
 }
 .application-item {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: -0.02em;
   color: rgb(var(--color-black));
 }
+
+.application-item-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+
+  background-color: rgb(var(--color-main));
+  border-radius: var(--radius-circle);
+}
+
+.application-item-checkmark {
+  stroke: rgb(var(--color-white));
+}
+
 .application-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  padding: 14px 0;
+
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: -0.02em;
+  line-height: 1.7;
   color: rgb(var(--color-white));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  padding: 14px 67px;
-  width: 255px;
-  height: 52px;
-  background: rgba(var(--color-main));
+    
+  border: none;
+  border-radius: var(--radius-controls);
+  background-color: rgb(var(--color-main));
+
+  transition: var(--transition-basic);
+  transition-property: background-color, color, border;
 }
