@@ -1,6 +1,6 @@
 /* Styling for the dialog (base for mobile first) */
-dialog {
-  position: fixed;
+.mob-menu {
+  position: absolute;
   top: 0;
   right: 0;
   width: 240px; /* Width for 375px screen */
@@ -12,6 +12,10 @@ dialog {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.menu-backdrop.is-open {
+  transform: translateX(0%);
 }
 
 /* Close button */
@@ -29,8 +33,15 @@ dialog {
 }
 
 /* Adjusting the backdrop for dialog */
-dialog::backdrop {
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
   background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
 }
 
 /* Menu List */

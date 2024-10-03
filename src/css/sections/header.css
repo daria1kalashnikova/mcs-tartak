@@ -16,7 +16,7 @@
 
 @media only screen and (min-width: 1280px) {
   .header-nav {
-  justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -81,11 +81,13 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  stroke: var(--color-main);
 }
 
 .mobile-menu-icon {
   width: 40px;
   height: auto;
+  stroke: rgb(var(--color-main));
 }
 
 @media only screen and (max-width: 375px) {
@@ -100,7 +102,6 @@
     width: 40px;
     height: auto;
   }
-
 }
 
 @media only screen and (min-width: 1280px) {

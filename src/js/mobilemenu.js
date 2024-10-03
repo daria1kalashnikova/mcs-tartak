@@ -1,15 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const closeMenuBtn = document.querySelector('.close-btn');
+(() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const openMenuBtn = document.querySelector('.js-open-menu');
+  const closeMenuBtn = document.querySelector('.js-close-menu');
+  const closeMenuLink = document.querySelectorAll('.mobile-menu-link');
 
-  // Відкрити мобільне меню
-  mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.showModal(); // Використовуємо showModal() для відкриття
-  });
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
 
-  // Закрити мобільне меню
-  closeMenuBtn.addEventListener('click', () => {
-    mobileMenu.close(); // Закриваємо діалог
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
+  closeMenuLink.forEach(item => item.addEventListener('click', toggleMenu));
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 1280px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
   });
-});
+})();
