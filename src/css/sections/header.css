@@ -10,10 +10,16 @@
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: 16px;
+  justify-content: flex-end;
   flex-grow: 1;
 }
+
+@media only screen and (min-width: 1280px) {
+  .header-nav {
+  justify-content: center;
+  }
+}
+
 .header-logo {
   display: inline-flex;
   max-width: 115px;
@@ -70,7 +76,15 @@
 }
 
 .mobile-menu-btn {
-  
+  stroke: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 1280px) {
