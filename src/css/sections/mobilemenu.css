@@ -5,13 +5,14 @@
   right: 0;
   width: 240px; /* Width for 375px screen */
   height: 100%; /* Full height */
-  background: rgba(18, 20, 23, 0.95);
+  background: rgb(var(--color-main));
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   border: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-backdrop.is-open {
@@ -27,9 +28,13 @@
   height: 32px;
   background: none;
   border: none;
-  color: white;
   font-size: 30px;
   cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.menu-close-icon {
+  fill: rgb(var(--color-white));
 }
 
 /* Adjusting the backdrop for dialog */
@@ -78,6 +83,12 @@
   border-radius: 10px;
   color: white;
   font-size: 24px;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: rgb(var(--color-white));
+  border: none;
 }
 
 /* Media query for screen width 768px and above */
