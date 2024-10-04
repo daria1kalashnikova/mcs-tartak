@@ -1,7 +1,7 @@
 
 /* #region Mobile layout */
 
-.form-title /* TO UDPATE */ {
+.form-title {
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -12,12 +12,13 @@
 
 .form-title .underline {
     position: relative;
+    display: inline-block;
 }
-.form-title .underline::before /* TO UDPATE */ {
+.form-title .underline::before {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 2px;
+    bottom: -2px;
 
     width: 100%;
     height: 12px;
@@ -27,7 +28,7 @@
     z-index: -1;
 }
 
-.subtitle /* TO UDPATE */ {
+.subtitle {
     text-align: center;
     color: rgb(var(--color-black) / 0.5);
     max-width: 335px;
@@ -150,7 +151,7 @@ form .btn-primary {
 
 }
 
-.form-button /* TO UDPATE */ {} 
+.form-button {} 
 
 .form-caption {
     color: rgb(var(--color-black) / 0.5);
