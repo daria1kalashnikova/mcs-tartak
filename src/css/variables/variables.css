@@ -1,6 +1,6 @@
 :root {
   /* font-family */
-  --font-primary: "Manrope", sans-serif;
+  --font-primary: 'Manrope', sans-serif;
 
   /* Colors */
 
@@ -12,7 +12,11 @@
   --color-white: 255 255 255; /* White */
 
   /* Gradients */
-  --gradient-green: linear-gradient(85deg, rgb(77, 194, 116) 2.25%, rgb(190, 232, 204) 131.25%);
+  --gradient-green: linear-gradient(
+    85deg,
+    rgb(77, 194, 116) 2.25%,
+    rgb(190, 232, 204) 131.25%
+  );
 
   /* Border radius */
   --radius-card: 16px;

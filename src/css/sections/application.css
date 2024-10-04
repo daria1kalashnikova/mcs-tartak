@@ -55,7 +55,7 @@
   position: relative;
   padding: 40px 20px;
   margin-bottom: 24px;
-  
+
   border-radius: var(--radius-card);
   background-color: rgb(var(--color-white));
 
@@ -178,7 +178,7 @@
   }
 }
 
-.application-item-icon{
+.application-item-icon {
   display: flex;
   justify-content: center;
   align-items: center;
