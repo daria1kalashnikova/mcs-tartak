@@ -45,12 +45,12 @@
 .reviews-list {
     display: grid;
     justify-items: center;
-    grid-template-rows: repeat(3, 278px);
+    grid-template-rows: 278px;
 }
 @media only screen and (min-width: 768px) {
   .reviews-list {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 326px);
+    grid-template-rows: 326px;
     gap: 32px;
   }
 }
