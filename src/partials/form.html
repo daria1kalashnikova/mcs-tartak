@@ -12,7 +12,7 @@
 
       <!-- Left part -->
       <ul class="form-card">
-        <li class="form-card-mask">
+        <li class="form-card-image">
         </li>
         <li class="form-card-item">
           <h3 class="card-title font-h2">1000</h3>
@@ -27,8 +27,9 @@
       </ul>
 
       <!-- Right part -->
-      <form class="form-wrapper" action="submit">
+      <form class="application-form" action="submit">
         <!-- Inputs -->
+        
         <label for="person-name"></label>
         <input
           class="form-input"
@@ -45,6 +46,8 @@
           type="text"
           id="person-email"
           placeholder="Email"
+          pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+          required
         />
 
         <label for="person-phone"></label>
@@ -65,6 +68,7 @@
 
         <!-- Radiobuttons -->
         <p class="form-subtitle font-h5">Choose a teacher</p>
+        <div class="form-options-wrapper">
         <label class="form-radio-label">
         <input 
         class="form-radio" 
@@ -75,6 +79,7 @@
         checked></input>
         <span class="checkmark"></span>
           Maria </label>
+
         <label class="form-radio-label">
         <input 
         class="form-radio" 
@@ -105,12 +110,12 @@
         id="volodymyr"></input>
         <span class="checkmark"></span>
           Volodymyr </label>
-
+        </div>
         <!-- Form bottom -->
         <button class="btn-primary" type="submit">Send</button>
         <p class="form-caption">
           By clicking on “Send” button, you agree to our
-          <a class="form-caption-link">Privacy Policy</a>, and allow Promodo to
+          <a href="#" class="form-caption-link">Privacy Policy</a>, and allow Promodo to
           use this information for marketing purposes.
         </p>
       </form>
