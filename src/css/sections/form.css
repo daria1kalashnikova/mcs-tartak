@@ -85,12 +85,13 @@
 .form-card-mask {
     position: absolute;
     top: -145px;
-    left: -52px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 597px;
     height: 537px;
     border-radius: 50%;
     background-color: white;
-    background-image: url(../../images/form/test-image.jpg);
+    background-image: url(../../images/form/);
     background-repeat: no-repeat;
     background-position: 45% 5%;
     background-size: 95%;
