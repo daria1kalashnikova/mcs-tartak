@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding: 20px 0;
 }
 
@@ -76,10 +77,14 @@
 }
 
 .mobile-menu-btn {
-  background: transparent;
+  position: absolute;
+  top: 17.5px;
+  right: 17.5px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -96,9 +101,11 @@
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
-  .mobile-menu-icon {
-    width: 40px;
-    height: auto;
+  .mobile-menu-btn {
+    top: 20px;
+    right: 20px;
+    min-width: 40px;
+    min-height: 28px;
   }
 }
 
