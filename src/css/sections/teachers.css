@@ -1,0 +1,121 @@
+
+.teachers-titel-primary {
+    /* font-weight: 700; */
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .teachers-titel-primary {
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+    }
+}
+
+.teachers-titel-primary .underline {
+    position: relative;
+    z-index: 1;
+}
+
+.teachers-titel-primary .underline::before {
+    content: '';
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        width: 100%;
+        height: 12px;
+    
+        background-color: rgb(var(--color-main-dark));
+        border-radius: 8px;
+        z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+    .teachers-titel-primary .underline::before {
+        bottom: 0px;
+        height: 20px;
+    }
+}
+
+.teachers-text-primary {
+    line-height: 1.71;
+
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .teachers-text-primary {
+        margin-bottom: 64px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .teachers-text-primary {
+        max-width: 709px;
+    }
+}
+
+.teachers-card-set {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .teachers-card-set {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .teachers-card-set {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+}
+
+.teachers-card-item {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .teachers-card-item {
+        max-width: 272px;
+    }
+}
+
+.teachers-img {
+    margin-bottom: 16px;
+    border-radius: 50%;
+}
+
+.teachers-titel-secondary {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.teachers-text-secondary {
+    line-height: 1.71;
+
+
+    max-width: 375px;
+}
+
+@media only screen and (min-width: 768px) {
+    .teachers-text-secondary {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

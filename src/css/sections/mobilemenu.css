@@ -1,0 +1,104 @@
+/* Styling for the dialog (base for mobile first) */
+.mob-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px; /* Width for 375px screen */
+  height: 100%; /* Full height */
+  background: rgb(var(--color-main));
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-backdrop.is-open {
+  transform: translateX(0%);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Right margin for 375px */
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.menu-close-icon {
+  fill: rgb(var(--color-white));
+}
+
+/* Adjusting the backdrop for dialog */
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Menu List */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 80px 0; /* Adjust margins as needed */
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0; /* Adjust margins as needed */
+}
+
+.social-links a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: rgb(var(--color-white));
+  border: none;
+}
+
+/* Media query for screen width 768px and above */
+@media only screen and (min-width: 768px) {
+  dialog {
+    width: 384px;
+    height: 100%; /* Full height */
+  }
+
+  .menu {
+    margin: 150px 0; /* Adjust margins for larger screens */
+  }
+}

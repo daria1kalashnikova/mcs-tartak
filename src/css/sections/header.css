@@ -10,10 +10,16 @@
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: 16px;
+  justify-content: flex-end;
   flex-grow: 1;
 }
+
+@media only screen and (min-width: 1280px) {
+  .header-nav {
+    justify-content: center;
+  }
+}
+
 .header-logo {
   display: inline-flex;
   max-width: 115px;
@@ -36,11 +42,11 @@
 }
 @media only screen and (min-width: 1280px) {
   .header-nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-  font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 14px;
   }
 }
 
@@ -70,10 +76,33 @@
 }
 
 .mobile-menu-btn {
-  
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-@media screen and (min-width: 1280px) {
+.mobile-menu-icon {
+  width: 40px;
+  height: auto;
+}
+
+@media only screen and (max-width: 375px) {
+  .mobile-menu-icon {
+    width: 32px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .mobile-menu-icon {
+    width: 40px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
   .mobile-menu-btn {
     display: none;
   }
@@ -85,9 +114,9 @@
 
 @media only screen and (min-width: 1280px) {
   .header-socials {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
   }
 }
