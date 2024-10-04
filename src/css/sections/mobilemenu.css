@@ -1,104 +1,140 @@
-/* Styling for the dialog (base for mobile first) */
-.mob-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 240px; /* Width for 375px screen */
-  height: 100%; /* Full height */
-  background: rgb(var(--color-main));
-  padding: 20px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  border: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-backdrop.is-open {
-  transform: translateX(0%);
-}
-
-/* Close button */
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px; /* Right margin for 375px */
-  width: 32px;
-  height: 32px;
-  background: none;
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-  transform: translateX(-50%);
-}
-
-.menu-close-icon {
-  fill: rgb(var(--color-white));
-}
-
-/* Adjusting the backdrop for dialog */
 .menu-backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateX(100%);
-  background: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
+  display: none;
 }
 
-/* Menu List */
-.menu {
-  list-style: none;
+.menu-backdrop.is-open {
+  display: block;
+}
+
+.menu-backdrop.is-open .mob-menu {
+  transform: translateX(0%);
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 100dvh;
+  color: var(--color-white);
+  background-color: rgb(var(--color-main));
+  border: none;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  transform: translateX(100%);
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mob-menu {
+    width: 384px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
   padding: 0;
-  margin: 80px 0; /* Adjust margins as needed */
+  fill: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.menu li {
+@media only screen and (min-width: 768px) {
+  .close-btn {
+    top: 20px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.menu-container-list {
+  padding-top: 248px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.menu-container-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.menu a {
+.menu-container-link {
   text-decoration: none;
-  font-size: 18px;
-  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
 }
 
-/* Social Links */
-.social-links {
+.social-container-list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 12px;
-  margin: 20px 0; /* Adjust margins as needed */
+  margin: 20px 0;
 }
 
-.social-links a {
-  width: 42px;
-  height: 42px;
+@media only screen and (min-width: 768px) {
+  .social-container-list {
+    margin: 32px 0;
+  }
+}
+
+.social-container-item {
+  min-width: 42px;
+  min-height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  color: white;
-  font-size: 24px;
 }
 
-.socials-link:hover,
-.socials-link:focus {
-  background-color: rgb(var(--color-white));
-  border: none;
+.social-container-link {
+  fill: rgba(255, 255, 255, 1);
 }
 
-/* Media query for screen width 768px and above */
 @media only screen and (min-width: 768px) {
-  dialog {
-    width: 384px;
-    height: 100%; /* Full height */
-  }
-
-  .menu {
-    margin: 150px 0; /* Adjust margins for larger screens */
+  .social-container-item {
+    min-width: 44px;
+    min-height: 44px;
   }
 }
