@@ -1,8 +1,29 @@
 .hero {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    margin-top: 16px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }
 
 .hero-container {
+  padding: 0 20px;
+  min-width: 180px;
+  max-width: 335px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -27,6 +48,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-container {
+    padding: 0 32px;
     max-width: 704px;
     justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
@@ -43,6 +65,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero-container {
+    padding: 0 64px;
     max-width: 1152px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
       url('../images/hero/hero-cover_desk@1x.jpg');
@@ -85,8 +108,9 @@
 }
 
 .hero-btn {
+  width: 100%;
   text-align: center;
-  width: 295px;
+  max-width: 295px;
 }
 
 @media only screen and (min-width: 768px) {
