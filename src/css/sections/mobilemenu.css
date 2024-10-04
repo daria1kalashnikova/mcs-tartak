@@ -7,11 +7,14 @@
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
-  transform: translateX(100%);
-  transition: transform var(--transition-basic);
+  display: none;
 }
 
 .menu-backdrop.is-open {
+  display: block;
+}
+
+.menu-backdrop.is-open .mob-menu {
   transform: translateX(0%);
 }
 
@@ -28,6 +31,19 @@
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
+  transform: translateX(100%);
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }
 
 @media only screen and (min-width: 768px) {
