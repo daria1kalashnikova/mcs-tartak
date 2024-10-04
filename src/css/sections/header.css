@@ -86,9 +86,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 32px;
-  min-height: 32px;
-  color: var(--color-main);
+}
+
+.mobile-menu-icon {
+  width: 40px;
+  height: auto;
+}
+
+@media only screen and (max-width: 375px) {
+  .mobile-menu-icon {
+    width: 32px;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
