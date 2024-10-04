@@ -91,11 +91,17 @@
     height: 537px;
     border-radius: 50%;
     background-color: white;
-    background-image: url(../../images/form/);
+    background-image: url(../../images/form/application-cover-full@1x.jpg);
     background-repeat: no-repeat;
     background-position: 45% 5%;
     background-size: 95%;
 }
+}
+
+@media (min-resolution: 192dpi) {
+    .form-card-mask {
+        background-image: url(../../images/form/application-cover-full@2x.jpg);
+    }
 }
 
 .form-card-item {
