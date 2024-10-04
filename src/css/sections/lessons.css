@@ -1,25 +1,25 @@
 .lessons-title {
-    display: block;
-    text-align: center;
-    margin: 0 auto 16px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 16px;
 
-    color: rgb(var(--color-black));
+  color: rgb(var(--color-black));
 }
 .lessons-title .underline {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .lessons-title .underline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    width: 100%;
-    height: 12px;
-    
-    background-color: rgb(var(--color-main-dark));
-    border-radius: 8px;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 12px;
+
+  background-color: rgb(var(--color-main-dark));
+  border-radius: 8px;
+  z-index: -1;
 }
 @media only screen and (min-width: 768px) {
   .lessons-title .underline::before {
@@ -29,10 +29,10 @@
 }
 
 .lessons-subtitle {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 
-    color: rgb(var(--color-black) / 50%);
+  color: rgb(var(--color-black) / 50%);
 }
 @media only screen and (min-width: 768px) {
   .lessons-subtitle {
@@ -42,11 +42,11 @@
   }
 }
 
- .lessons-list {
-    display: grid;
-    justify-items: center;
-    grid-template-rows: repeat(3, 400px);
-    gap: 20px;
+.lessons-list {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(3, 400px);
+  gap: 20px;
 }
 @media only screen and (min-width: 768px) {
   .lessons-list {
@@ -56,23 +56,23 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-    .lessons-list {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 404px);
-    }
+  .lessons-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 404px);
+  }
 }
 
 .lessons-item {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  width: 100%;
 
-    border: 1px solid rgb(var(--color-main));
-    border-radius: var(--radius-card);
+  border: 1px solid rgb(var(--color-main));
+  border-radius: var(--radius-card);
 
-    color: rgb(var(--color-black) / 50%);
-    background-color: rgb(var(--color-white));
+  color: rgb(var(--color-black) / 50%);
+  background-color: rgb(var(--color-white));
 }
 @media only screen and (min-width: 768px) {
   .lessons-item {
@@ -85,39 +85,39 @@
   }
 }
 .lessons-item.accent {
-    color: rgb(var(--color-white));
-    background-color: rgb(var(--color-main));
+  color: rgb(var(--color-white));
+  background-color: rgb(var(--color-main));
 }
 
 .lessons-item-title {
-    margin-bottom: 16px;
-    text-align: center;
+  margin-bottom: 16px;
+  text-align: center;
 
-    color: rgb(var(--color-black));
+  color: rgb(var(--color-black));
 }
 .lessons-item.accent .lessons-item-title {
-    color: rgb(var(--color-white));
+  color: rgb(var(--color-white));
 }
 
 .lessons-item-price {
-    margin-bottom: 40px;
-    text-align: center;
+  margin-bottom: 40px;
+  text-align: center;
 
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.125;
-    letter-spacing: -0.02em;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.125;
+  letter-spacing: -0.02em;
 
-    color: rgb(var(--color-black));
+  color: rgb(var(--color-black));
 }
 .lessons-item.accent .lessons-item-price {
-    color: rgb(var(--color-white));
+  color: rgb(var(--color-white));
 }
 
 .lessons-item-body {
-    margin-bottom: 20px;
-    text-align: center;
-    height: 132px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 132px;
 }
 @media only screen and (min-width: 1280px) {
   .lessons-item-body {
@@ -125,26 +125,26 @@
   }
 }
 .lessons-item.accent .lessons-item-body {
-    color: rgb(var(--color-white) / 70%);
+  color: rgb(var(--color-white) / 70%);
 }
 
 .lessons-item.accent .lessons-item-button {
-    border: 1px solid rgb(var(--color-white) / 40%);
+  border: 1px solid rgb(var(--color-white) / 40%);
 }
 @media only screen and (max-width: 767.98px) {
   .lessons-item.accent .lessons-item-button:active {
-      color: rgb(var(--color-main));
+    color: rgb(var(--color-main));
 
-      border: 1px solid transparent;
-      background-color: rgb(var(--color-white));
+    border: 1px solid transparent;
+    background-color: rgb(var(--color-white));
   }
 }
 @media only screen and (min-width: 768px) {
   .lessons-item.accent .lessons-item-button:hover,
   .lessons-item.accent .lessons-item-button:focus {
-      color: rgb(var(--color-main));
+    color: rgb(var(--color-main));
 
-      border: 1px solid transparent;
-      background-color: rgb(var(--color-white));
+    border: 1px solid transparent;
+    background-color: rgb(var(--color-white));
   }
 }
