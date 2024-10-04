@@ -1,60 +1,234 @@
 .application-section {
-  margin: 0 auto;
-
-  border-radius: 16px;
-  padding: 40px 20px 64px 20px;
-  background-image: var(--gradient-green);
+  padding: 80px 20px;
 }
 
-.application-section-title {
+.application-container {
+  min-width: 180px;
+  max-width: 335px;
+  padding: 40px 20px;
+  overflow: hidden;
+
+  border-radius: var(--radius-card);
+  background-image: var(--gradient-green);
+}
+@media only screen and (min-width: 768px) {
+  .application-container {
+    max-width: 704px;
+    padding: 64px 18px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .application-container {
+    max-width: 1152px;
+    padding: 64px 64px;
+  }
+}
+
+.application-title {
   text-align: left;
   color: rgb(var(--color-white));
   margin-bottom: 65px;
 }
-
 @media only screen and (min-width: 768px) {
+  .application-title {
+    max-width: 640px;
+    margin: 0 auto 86px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .application-title {
+    max-width: 776px;
+    margin: 0 0 133px;
+  }
 }
 
-.application-accent {
-  background-color: rgba(var(--color-main));
+.application-title-accent {
+  color: rgba(var(--color-main-dark));
+}
+
+.application-cards-bg {
+  position: relative;
 }
 
 .application-wrapper {
-  border-radius: 16px;
-  background-color: rgb(var(--color-white));
-  margin: 0 20px 65px 20px;
+  position: relative;
   padding: 40px 20px;
+  margin-bottom: 24px;
+  
+  border-radius: var(--radius-card);
+  background-color: rgb(var(--color-white));
+
+  z-index: 2;
 }
+@media only screen and (min-width: 768px) {
+  .application-wrapper {
+    padding: 62px 32px 66px;
+    margin-bottom: 26px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .application-wrapper {
+    padding: 64px;
+    margin-bottom: 78px;
+  }
+}
+
+.application-rectangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 295px;
+  height: 408px;
+
+  border-radius: var(--radius-card);
+  background-color: rgb(var(--color-main-light));
+}
+@media only screen and (min-width: 768px) {
+  .application-rectangle {
+    width: 668px;
+    height: 500px;
+  }
+}
+
+.application-rectangle-1 {
+  transform: translate(-50%, -50%) rotate(352deg);
+}
+@media only screen and (min-width: 1280px) {
+  .application-rectangle-1 {
+    left: 49%;
+    width: 1050px;
+    height: 463px;
+  }
+}
+
+.application-rectangle-2 {
+  background-color: rgb(var(--color-white) / 50%);
+
+  transform: translate(-50%, -50%) rotate(11deg);
+}
+@media only screen and (min-width: 768px) {
+  .application-rectangle-2 {
+    transform: translate(-50%, -50%) rotate(10.65deg);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .application-rectangle-2 {
+    width: 1011px;
+    height: 402px;
+
+    transform: translate(-50%, -50%) rotate(11deg);
+  }
+}
+
 .section-subtitle {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  margin-bottom: 20px;
+
   color: rgb(var(--color-black));
+}
+@media only screen and (min-width: 768px) {
+  .section-subtitle {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .section-subtitle {
+    margin-bottom: 40px;
+  }
 }
 
 .application-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
   color: rgb(var(--color-black));
 }
+@media only screen and (min-width: 768px) {
+  .application-list {
+    max-width: 451px;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .application-list {
+    max-width: 654px;
+    margin-bottom: 40px;
+  }
+}
+
 .application-item {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: -0.02em;
   color: rgb(var(--color-black));
 }
-.application-link {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: -0.02em;
-  color: rgb(var(--color-white));
+@media only screen and (min-width: 768px) {
+  .application-item {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.application-item-icon{
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  padding: 14px 67px;
-  width: 255px;
-  height: 52px;
-  background: rgba(var(--color-main));
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  flex-shrink: 0;
+
+  background-color: rgb(var(--color-main));
+  border-radius: var(--radius-circle);
+}
+@media only screen and (min-width: 768px) {
+  .application-item-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
+  }
+}
+
+.application-item-checkmark {
+  width: 9.5px;
+  height: 7.5px;
+  fill: rgb(var(--color-white));
+}
+@media only screen and (min-width: 768px) {
+  .application-item-checkmark {
+    width: 15.5px;
+    height: 11px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .application-link {
+    width: 306px;
+  }
+}
+
+.application-wrapper-image {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .application-wrapper-image {
+    display: block;
+    position: absolute;
+    top: 174px;
+    right: -49px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .application-wrapper-image {
+    top: 129px;
+    right: 0;
+  }
 }
