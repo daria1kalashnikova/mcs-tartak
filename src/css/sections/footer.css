@@ -1,5 +1,5 @@
 .footer {
-  padding: 40px 20px;
+  padding: 40px 20px 20px 20px;
   background-color: rgb(var( --color-black));
 }
 
@@ -80,6 +80,7 @@
   border: 1px solid rgba(255, 255, 255, 10%);
 }
 
+
 .footer-socials{
   gap: 12px;
 }
@@ -96,7 +97,7 @@
   content: "";
   display: block;
   height: 1px; 
-  background-color:rgb(255, 255, 255, 60%) ; 
+  background-color:rgb(255, 255, 255, 10%) ; 
   margin-bottom: 10px; 
   width: 100%; 
   position: absolute; 
@@ -115,7 +116,7 @@
   }
 
   .footer{
-    padding: 32px;
+    padding: 32px 32px 16px 32px;
   }
 
   .footer-container{
@@ -128,10 +129,26 @@
 
 @media only screen and (min-width:1280px){
   .footer{
-    padding: 64px 128px;
+    padding: 64px 128px 24px 128px;
   }
 
   .footer-container{
     margin-bottom: 64px;
+  }
+
+  .footer-nav-link:hover{
+    color: rgb(var(--color-main));
+  }
+
+  .footer-address-link:hover{
+    color: rgb(var(--color-main));
+  }
+
+  .footer .socials-link:hover{
+    background-color: rgb(var(--color-main));
+  }
+
+  .privacy-policy-link:hover{
+    color: rgb(var(--color-main));
   }
 }
