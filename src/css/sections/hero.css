@@ -1,6 +1,9 @@
+.hero {
+  padding: 0 20px;
+}
+
 .hero-container {
   display: flex;
-  gap: 40px;
   position: relative;
   flex-direction: column;
   align-items: baseline;
@@ -25,7 +28,6 @@
 @media screen and (min-width: 768px) {
   .hero-container {
     max-width: 704px;
-    gap: 32px;
     justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
       url('../images/hero/hero-cover_tablet@1x.jpg');
@@ -57,10 +59,10 @@
 .hero-title {
   font-weight: 700;
   font-size: 38px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
+  line-height: 1.05;
   text-align: left;
   color: rgb(var(--color-white));
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -68,6 +70,7 @@
     max-width: 488px;
     font-weight: 700;
     font-size: 60px;
+    margin-bottom: 32px;
   }
 }
 
