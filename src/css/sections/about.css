@@ -92,7 +92,6 @@
   counter-increment: item;
   background-color: rgb(var(--color-gray));
   border-radius: var(--radius-card);
-  width: 325px;
   height: 160px;
   padding: 30px;
   position: relative;
@@ -106,10 +105,6 @@
   font-size: 32px;
   font-weight: 700;
   color: rgb(var(--color-main));
-}
-@media only screen and (min-width: 375px) {
-  .about-item {
-  }
 }
 
 .about-item.accent {
@@ -173,21 +168,8 @@
 
 @media only screen and (min-width: 768px) {
 }
-.font-h4 {
-  width: 272px;
+.about-item-title {
   text-align: left;
   padding-top: 16px;
   margin: 0;
-}
-
-@media only screen and (min-width: 1280px) {
-  .font-h4 {
-    width: 261px;
-  }
-}
-
-@media only screen and (min-width: 375px) {
-  .font-h4 {
-    width: 271px;
-  }
 }
