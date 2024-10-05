@@ -1,6 +1,6 @@
 .footer {
-  padding: 40px 0;
-  background-color: rgb(var(--color-black));
+  padding: 20px 0;
+  background-color: rgb(var( --color-black));
 }
 
 .footer-container {
