@@ -36,6 +36,7 @@
           placeholder="Name"
           minlength="3"
           required
+          aria-label="input fot name"
         />
 
         <label for="person-email"></label>
@@ -46,6 +47,7 @@
           placeholder="Email"
           pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
           required
+          aria-label="input for email"
         />
 
         <label for="person-phone"></label>
@@ -56,12 +58,14 @@
           placeholder="Phone"
           pattern="^\+380\d{9}$"
           required
+          aria-label="input for person phone"
         />
         <textarea
           class="form-textarea"
           name="comment"
           id="customer-comment"
           placeholder="Comment"
+          aria-label="area for comment"
         ></textarea>
 
         <!-- Radiobuttons -->
@@ -75,6 +79,7 @@
               value="teacher1"
               id="maria"
               checked
+              aria-label="choose teacher Maria"
             />
             <span class="checkmark"></span>
             Maria
@@ -87,6 +92,7 @@
               name="teacher"
               value="teacher2"
               id="artem"
+              aria-label="choose teacher Artem"
             />
             <span class="checkmark"></span>
             Artem
@@ -98,6 +104,7 @@
               name="teacher"
               value="teacher3"
               id="ilona"
+              aria-label="choose teacher Ilona"
             />
 
             <span class="checkmark"></span>
@@ -111,6 +118,7 @@
               name="teacher"
               value="teacher4"
               id="volodymyr"
+              aria-label="choose teacher Volodymyr"
             />
             <span class="checkmark"></span>
             Volodymyr
@@ -120,7 +128,7 @@
         <button class="btn-primary" type="submit">Send</button>
         <p class="form-caption">
           By clicking on “Send” button, you agree to our
-          <a href="#" class="form-caption-link">Privacy Policy</a>, and allow
+          <a href="#" class="form-caption-link" aria-label="link to privat policy" >Privacy Policy</a>, and allow
           Promodo to use this information for marketing purposes.
         </p>
       </form>
