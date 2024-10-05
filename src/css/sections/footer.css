@@ -110,11 +110,19 @@
     padding-bottom: 16px;
   }
 
+  .footer-nav{
+    margin-bottom: 0;
+  }
+
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 110px;
+  }
+
+  .footer-address{
+    margin-bottom: 0;
   }
 }
 
@@ -126,6 +134,10 @@
 
   .footer-container {
     margin-bottom: 64px;
+  }
+
+  .footer-nav{
+    margin-bottom: 0;
   }
 
   .footer-nav-link:hover {
@@ -142,5 +154,9 @@
 
   .privacy-policy-link:hover {
     color: rgb(var(--color-main));
+  }
+
+  .footer-address{
+    margin-bottom: 0;
   }
 }
