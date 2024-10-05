@@ -65,26 +65,28 @@
   }
 }
 .about-list {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 32px;
-list-style: none;
-padding: 0 0;
-margin: 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  list-style: none;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .about-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    }
-}
-@media only screen and (max-width: 768px) {
-  .about-list {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 32px;
   }
 }
+
 .about-item {
   display: flex;
   counter-increment: item;
@@ -97,8 +99,7 @@ margin: 0 0;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
-  }
-
+}
 
 .about-item::before {
   content: counter(item, decimal-leading-zero);
@@ -111,11 +112,10 @@ margin: 0 0;
   }
 }
 
-
 .about-item.accent {
   background-color: rgb(var(--color-gray));
 }
-.about-images-card{
+.about-images-card {
   width: 310px;
   height: 352px;
   background: rgb(var(--color-main));
@@ -127,12 +127,13 @@ margin: 0 0;
   box-sizing: border-box;
 }
 @media only screen and (max-width: 768px) {
-  .about-images-card {width: 100%;
+  .about-images-card {
+    width: 100%;
     height: 243px;
     margin: 32px auto 0 auto;
     box-sizing: border-box;
-    max-width: 704px
-}
+    max-width: 704px;
+  }
 }
 @media only screen and (max-width: 1280px) {
   .about-images-card {
@@ -140,7 +141,7 @@ margin: 0 0;
     height: 243px;
     margin: 32px auto 0 auto;
     box-sizing: border-box;
-    max-width: 704px
+    max-width: 704px;
   }
 }
 
@@ -155,9 +156,9 @@ margin: 0 0;
 @media only screen and (max-width: 768px) {
   .about-images {
     width: auto;
-      height: 100%;
-      max-width: 100%;
-      object-fit: contain;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
   }
 }
 
@@ -167,8 +168,8 @@ margin: 0 0;
     height: 100%;
     max-width: 100%;
     object-fit: contain;
-    }
   }
+}
 
 @media only screen and (min-width: 768px) {
 }
