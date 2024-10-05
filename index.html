@@ -39,19 +39,44 @@
     <nav class="header-nav font-nav-link">
       <ul class="header-nav-list font-h5">
         <li class="header-nav-item">
-          <a class="header-nav-link active" href="#about">About us</a>
+          <a
+            class="header-nav-link active"
+            aria-label="link to about us section"
+            href="#about"
+            >About us</a
+          >
         </li>
         <li class="header-nav-item">
-          <a class="header-nav-link" href="#lessons">Our lessons</a>
+          <a
+            class="header-nav-link"
+            aria-label="link to our lessons section"
+            href="#lessons"
+            >Our lessons</a
+          >
         </li>
         <li class="header-nav-item">
-          <a class="header-nav-link" href="#teachers">Teachers</a>
+          <a
+            class="header-nav-link"
+            aria-label="link to teachers section"
+            href="#teachers"
+            >Teachers</a
+          >
         </li>
         <li class="header-nav-item">
-          <a class="header-nav-link" href="#reviews">Reviews</a>
+          <a
+            class="header-nav-link"
+            aria-label="link to reviews section"
+            href="#reviews"
+            >Reviews</a
+          >
         </li>
         <li class="header-nav-item">
-          <a class="header-nav-link" href="#form">Contact us</a>
+          <a
+            class="header-nav-link"
+            aria-label="link to application form"
+            href="#form"
+            >Contact us</a
+          >
         </li>
       </ul>
       <button
@@ -120,19 +145,44 @@
 
     <ul class="menu-container-list">
       <li class="menu-container-item">
-        <a href="#about" class="menu-container-link">About us</a>
+        <a
+          href="#about"
+          class="menu-container-link"
+          aria-label="link to about us section"
+          >About us</a
+        >
       </li>
       <li class="menu-container-item">
-        <a href="#lessons" class="menu-container-link">Our lessons</a>
+        <a
+          href="#lessons"
+          class="menu-container-link"
+          aria-label="link to our lessons section"
+          >Our lessons</a
+        >
       </li>
       <li class="menu-container-item">
-        <a href="#teachers" class="menu-container-link">Teachers</a>
+        <a
+          href="#teachers"
+          class="menu-container-link"
+          aria-label="link to teachers section"
+          >Teachers</a
+        >
       </li>
       <li class="menu-container-item">
-        <a href="#reviews" class="menu-container-link">Reviews</a>
+        <a
+          href="#reviews"
+          class="menu-container-link"
+          aria-label="link to reviews section"
+          >Reviews</a
+        >
       </li>
       <li class="menu-container-item">
-        <a href="#form" class="menu-container-link">Contact us</a>
+        <a
+          href="#form"
+          class="menu-container-link"
+          aria-label="link to application form"
+          >Contact us</a
+        >
       </li>
     </ul>
 
@@ -192,10 +242,18 @@
       Discover the joy of learning <span class="hero-accent">English </span>with
       us!
     </h1>
-    <a class="btn-primary hero-btn" href="#form">
+    <a
+      class="btn-primary hero-btn"
+      aria-label="link to application form"
+      href="#form"
+    >
       Leave an application
     </a>
-    <a class="scroll-icon-link" href="#footer">
+    <a
+      class="scroll-icon-link"
+      aria-label="link to footer section"
+      href="#footer"
+    >
       <svg class="scroll-icon" width="24" height="24">
         <use href="/mcs-tartak/assets/icons-BtuKNBIS.svg#scroll-icon"></use>
       </svg>
@@ -282,7 +340,11 @@
           all key areas of English language - reading, writing, listening, and
           speaking. It is a set of basic knowledge and skills.
         </p>
-        <a class="lessons-item-button btn-primary" href="#form">
+        <a
+          class="lessons-item-button btn-primary"
+          aria-label="link to application form"
+          href="#form"
+        >
           Leave an application
         </a>
       </li>
@@ -342,7 +404,10 @@
             and confidence grow with every session.
           </li>
         </ul>
-        <a class="application-link btn-primary" href="#form"
+        <a
+          class="application-link btn-primary"
+          href="#form"
+          aria-label="application form"
           >Leave an application</a
         >
         <img
@@ -499,6 +564,7 @@
           placeholder="Name"
           minlength="3"
           required
+          aria-label="input fot name"
         />
 
         <label for="person-email"></label>
@@ -509,6 +575,7 @@
           placeholder="Email"
           pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
           required
+          aria-label="input for email"
         />
 
         <label for="person-phone"></label>
@@ -519,12 +586,14 @@
           placeholder="Phone"
           pattern="^\+380\d{9}$"
           required
+          aria-label="input for person phone"
         />
         <textarea
           class="form-textarea"
           name="comment"
           id="customer-comment"
           placeholder="Comment"
+          aria-label="area for comment"
         ></textarea>
 
         <!-- Radiobuttons -->
@@ -538,6 +607,7 @@
               value="teacher1"
               id="maria"
               checked
+              aria-label="choose teacher Maria"
             />
             <span class="checkmark"></span>
             Maria
@@ -550,6 +620,7 @@
               name="teacher"
               value="teacher2"
               id="artem"
+              aria-label="choose teacher Artem"
             />
             <span class="checkmark"></span>
             Artem
@@ -561,6 +632,7 @@
               name="teacher"
               value="teacher3"
               id="ilona"
+              aria-label="choose teacher Ilona"
             />
 
             <span class="checkmark"></span>
@@ -574,6 +646,7 @@
               name="teacher"
               value="teacher4"
               id="volodymyr"
+              aria-label="choose teacher Volodymyr"
             />
             <span class="checkmark"></span>
             Volodymyr
@@ -583,7 +656,7 @@
         <button class="btn-primary" type="submit">Send</button>
         <p class="form-caption">
           By clicking on “Send” button, you agree to our
-          <a href="#" class="form-caption-link">Privacy Policy</a>, and allow
+          <a href="#" class="form-caption-link" aria-label="link to privat policy" >Privacy Policy</a>, and allow
           Promodo to use this information for marketing purposes.
         </p>
       </form>
@@ -689,6 +762,7 @@
             <p class="footer-address-title">Phone number:</p>
             <a
               class="footer-address-link font-nav-link"
+              aria-label="link to phone"
               href="tel:+380684439426"
               >+380 (68) 443-94-26</a
             >
@@ -698,6 +772,7 @@
             <a
               target="_blank"
               class="footer-address-link font-nav-link"
+              aria-label="link to address"
               href="https://maps.app.goo.gl/oBLrsk1jooD3mjig9"
               >32a M. Bazhana ave</a
             >
@@ -709,21 +784,21 @@
     <div class="footer-nav">
       <ul class="footer-nav-list">
         <li class="footer-nav-item">
-          <a class="footer-nav-link font-nav-link" href="#about">About us</a>
+          <a class="footer-nav-link font-nav-link" aria-label="link to about us" href="#about">About us</a>
         </li>
         <li class="footer-nav-item">
-          <a class="footer-nav-link font-nav-link" href="#lessons"
+          <a class="footer-nav-link font-nav-link" href="#lessons" aria-label="link to section on our lessons"
             >Our lessons</a
           >
         </li>
         <li class="footer-nav-item">
-          <a class="footer-nav-link font-nav-link" href="#teachers">Teachers</a>
+          <a class="footer-nav-link font-nav-link" aria-label="link to teachers section" href="#teachers">Teachers</a>
         </li>
         <li class="footer-nav-item">
-          <a class="footer-nav-link font-nav-link" href="#reviews">Reviews</a>
+          <a class="footer-nav-link font-nav-link" aria-label="link to reviews section" href="#reviews">Reviews</a>
         </li>
         <li class="footer-nav-item">
-          <a class="footer-nav-link font-nav-link" href="#form">Contact us</a>
+          <a class="footer-nav-link font-nav-link" aria-label="link to application form" href="#form">Contact us</a>
         </li>
       </ul>
     </div>
@@ -774,10 +849,10 @@
     <p>&#169;2023 English Excellence. All rights reserved.</p>
     <ul class="privacy-policy">
       <li class="privacy-policy-item">
-        <a class="privacy-policy-link" href="#">Privacy Policy</a>
+        <a class="privacy-policy-link" aria-label="link to privat policy" href="#">Privacy Policy</a>
       </li>
       <li class="privacy-policy-item">
-        <a class="privacy-policy-link" href="#">Terms of Service</a>
+        <a class="privacy-policy-link" aria-label="link to terms of services" href="#">Terms of Service</a>
       </li>
     </ul>
   </div>
