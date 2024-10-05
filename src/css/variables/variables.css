@@ -1,4 +1,7 @@
 :root {
+  /* scroll */
+  scroll-behavior: smooth;
+
   /* font-family */
   --font-primary: 'Manrope', sans-serif;
 
